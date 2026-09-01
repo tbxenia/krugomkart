@@ -1,0 +1,670 @@
+/* Страница «О компании» — поверх style.css / menu.css */
+
+.page-about .banner__content {
+  padding: 56px 0;
+}
+
+.page-about .banner__title {
+  max-width: 461px;
+  line-height: 1.2875;
+}
+
+.page-about .banner__text {
+  max-width: 471px;
+  line-height: 1.29;
+}
+
+.page-about .tabs {
+  padding-top: 44px;
+}
+
+.page-text,
+.section-text {
+  font-family: var(--font);
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--black);
+}
+
+.page-text b,
+.page-text strong {
+  font-family: var(--font-bold);
+  font-weight: normal;
+}
+
+/* Intro */
+.about-intro {
+  padding-top: 52px;
+  background: transparent;
+}
+
+.about-intro .section-title {
+  margin-bottom: 16px;
+}
+
+.about-intro .page-text {
+  max-width: 1090px;
+}
+
+.about-intro .page-text p + p {
+  margin-top: 22px;
+}
+
+/* History */
+.history {
+  padding-top: 53px;
+  padding-bottom: 83px;
+}
+
+.history .page-text {
+  max-width: 1075px;
+  margin-top: 13px;
+  line-height: 1.3;
+}
+
+.history__map {
+  position: relative;
+  margin-top: 49px;
+  overflow: visible;
+}
+
+.history__map::before {
+  content: "";
+  position: absolute;
+  left: -170px;
+  top: 54px;
+  width: 1372px;
+  height: 435px;
+  background: url("../images/history-line.svg") no-repeat left top;
+  background-size: 1372px 435px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.history__list {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 107px;
+  margin-top: 0;
+}
+
+.history__item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history__item-year {
+  font-family: var(--font-black);
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.22;
+  min-height: 34px;
+  color: var(--black);
+  margin-bottom: 9px;
+  text-align: center;
+}
+
+.history__item-img {
+  width: 135px;
+  height: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+
+.history__item:first-child .history__item-img {
+  width: 191px;
+}
+
+.history__item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.history__item-text {
+  margin-top: 23px;
+  max-width: 198px;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--black);
+  text-align: left;
+}
+
+.history__item:first-child .history__item-text {
+  margin-top: 12px;
+}
+
+.history__item:nth-child(3) .history__item-text,
+.history__item:nth-child(4) .history__item-text,
+.history__item:nth-child(8) .history__item-text {
+  max-width: 256px;
+}
+
+/* Mission */
+.mission {
+  padding-top: 70px;
+  padding-bottom: 58px;
+  background: var(--white);
+}
+
+.mission .section-title {
+  text-align: center;
+}
+
+.mission .section-subtitle {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.mission__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px 40px;
+  margin-top: 72px;
+}
+
+.mission__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mission__item-title {
+  font-family: var(--font-bold);
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.mission__item-img {
+  height: 123px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.mission__item-img img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 123px;
+  object-fit: contain;
+}
+
+.mission__item:nth-child(1) .mission__item-img img {
+  width: 84px;
+  height: 115px;
+}
+
+.mission__item:nth-child(2) .mission__item-img img {
+  width: 114px;
+  height: 106px;
+}
+
+.mission__item:nth-child(3) .mission__item-img img {
+  width: 111px;
+  height: 123px;
+}
+
+.mission__item-text {
+  margin-top: 25px;
+  max-width: 273px;
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--black);
+  text-align: left;
+}
+
+/* Team */
+.team {
+  padding-top: 53px;
+}
+
+.team .section-title {
+  font-family: var(--font-extrabold);
+}
+
+.team .section-subtitle {
+  margin-top: 5px;
+}
+
+.team .section-text {
+  margin-top: 8px;
+  max-width: 1090px;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.team__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 28px;
+}
+
+.team__gallery img {
+  width: 100%;
+  height: 242px;
+  object-fit: cover;
+}
+
+/* Geography */
+.geo {
+  padding-top: 77px;
+  padding-bottom: 102px;
+}
+
+.geo .container {
+  position: relative;
+}
+
+.geo .container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28px;
+  width: 100%;
+  height: 645px;
+  background: url("../images/geo-bg.png") no-repeat left top;
+  background-size: 100% auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.geo .container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.geo .section-title {
+  font-family: var(--font-extrabold);
+}
+
+.geo .section-subtitle {
+  margin-top: 5px;
+}
+
+.geo .section-text {
+  margin-top: 8px;
+  max-width: 1090px;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.geo__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 40px;
+  margin-top: 29px;
+  align-items: stretch;
+}
+
+.geo__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.geo__col-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 26px;
+  font-family: var(--font-bold);
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--black);
+}
+
+.geo__flag {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 23px;
+  height: 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.geo__flag--ru {
+  background: linear-gradient(#ffffff 0 33.33%, #0039a6 33.33% 66.66%, #d52b1e 66.66% 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.geo__flag--by {
+  width: 20px;
+  height: 10px;
+  background: linear-gradient(#d52b1e 0 66%, #007c30 66% 100%);
+}
+
+.geo__flag--kz {
+  width: 20px;
+  height: 10px;
+  background: #00afca;
+}
+
+.geo__flag--am {
+  width: 20px;
+  height: 10px;
+  background: linear-gradient(#d90012 0 33.33%, #0033a0 33.33% 66.66%, #f2a800 66.66% 100%);
+}
+
+.geo__flag--kg {
+  width: 20px;
+  height: 12px;
+  background: #e8112d;
+}
+
+.geo__region {
+  margin-bottom: 20px;
+}
+
+.geo__region:last-of-type {
+  margin-bottom: 0;
+}
+
+.geo__region-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-bold);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--black);
+}
+
+.geo__region p {
+  margin-top: 4px;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--black);
+  max-width: 530px;
+}
+
+.geo__col:last-child .geo__region-title {
+  font-family: var(--font-semibold);
+  line-height: 1.44;
+}
+
+.geo__col:last-child .geo__region p {
+  line-height: 1.44;
+}
+
+.geo__note {
+  position: relative;
+  box-sizing: border-box;
+  width: 591px;
+  max-width: 100%;
+  min-height: 77px;
+  margin-top: 78px;
+  margin-left: auto;
+  padding: 18px 28px 18px 42px;
+  display: flex;
+  align-items: center;
+  background: var(--standart-color-button);
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--white);
+  overflow: visible;
+}
+
+.geo__note::before {
+  content: "";
+  position: absolute;
+  left: 85px;
+  top: -23px;
+  width: 44px;
+  height: 38px;
+  background: var(--standart-color-button);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+/* Docs / consult on this page */
+.page-about .docs {
+  padding-top: 72px;
+}
+
+.page-about .docs .section-title {
+  font-family: var(--font-bold);
+  line-height: 1.22;
+}
+
+.page-about .docs .section-subtitle {
+  margin-top: 5px;
+}
+
+.page-about .docs .section-text {
+  margin-top: 7px;
+  margin-bottom: 0;
+  max-width: 964px;
+  font-size: 15px;
+  line-height: 1.22;
+}
+
+.page-about .docs__grid {
+  margin-top: 30px;
+}
+
+.page-about .docs__item {
+  gap: 10px;
+  line-height: 1.22;
+}
+
+.page-about .docs__link {
+  margin-top: 28px;
+}
+
+.page-about .consult {
+  padding-top: 56px;
+  padding-bottom: 108px;
+}
+
+@media (max-width: 576px) {
+  .page-about .banner__title,
+  .page-about .banner__text {
+    max-width: none;
+  }
+
+  .about-intro,
+  .history,
+  .mission,
+  .team,
+  .geo,
+  .page-about .docs {
+    padding-top: 32px;
+  }
+
+  .mission .section-title {
+    text-align: center;
+  }
+
+  .mission {
+    padding-bottom: 40px;
+  }
+
+  .page-about .consult {
+    padding-bottom: 48px;
+  }
+
+  .page-text,
+  .section-text {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .about-intro .page-text,
+  .history .page-text,
+  .team .section-text,
+  .geo .section-text,
+  .page-about .docs .section-text {
+    max-width: none;
+  }
+
+  .history__map {
+    margin-top: 24px;
+    overflow: hidden;
+  }
+
+  .history__map::before {
+    content: "";
+    left: 0;
+    top: 36px;
+    width: 100%;
+    height: 640px;
+    background-image: url("../images/history-line-mobile.svg");
+    background-size: 100% auto;
+    background-position: center top;
+  }
+
+  .history {
+    padding-bottom: 32px;
+  }
+
+  .history__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 12px;
+    row-gap: 28px;
+    margin-top: 0;
+  }
+
+  .history__item-year {
+    font-size: 15px;
+    min-height: 0;
+    margin-bottom: 8px;
+  }
+
+  .history__item-img,
+  .history__item:first-child .history__item-img {
+    width: 120px;
+    height: 88px;
+  }
+
+  .history__item-text,
+  .history__item:first-child .history__item-text,
+  .history__item:nth-child(3) .history__item-text,
+  .history__item:nth-child(4) .history__item-text,
+  .history__item:nth-child(8) .history__item-text {
+    margin-top: 10px;
+    font-size: 11px;
+    max-width: none;
+  }
+
+  .mission .section-subtitle {
+    font-size: 14px;
+  }
+
+  .mission__list {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 28px;
+  }
+
+  .mission__item-title {
+    font-size: 13px;
+  }
+
+  .mission__item-img {
+    height: 100px;
+  }
+
+  .mission__item-img img,
+  .mission__item:nth-child(1) .mission__item-img img,
+  .mission__item:nth-child(2) .mission__item-img img,
+  .mission__item:nth-child(3) .mission__item-img img {
+    max-height: 100px;
+    width: auto;
+    height: auto;
+  }
+
+  .mission__item-text {
+    margin-top: 12px;
+    font-size: 11px;
+    max-width: 280px;
+  }
+
+  .team__gallery {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .team__gallery img {
+    height: 200px;
+  }
+
+  .team__gallery img:not(:first-child) {
+    display: none;
+  }
+
+  .geo {
+    padding-bottom: 16px;
+  }
+
+  .geo .container::before {
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    background-size: contain;
+    background-position: center top;
+  }
+
+  .geo__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 24px;
+  }
+
+  .geo__col-title {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .geo__region-title {
+    font-size: 13px;
+  }
+
+  .geo__region p {
+    font-size: 11px;
+  }
+
+  .geo__note {
+    width: 100%;
+    max-width: none;
+    min-height: 51px;
+    margin-top: 40px;
+    margin-left: 0;
+    padding: 12px 16px;
+    font-size: 11px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .geo__note::before {
+    left: 50%;
+    top: -12px;
+    width: 28px;
+    height: 24px;
+    transform: translateX(-50%);
+  }
+}

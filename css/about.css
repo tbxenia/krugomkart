@@ -137,16 +137,6 @@
   text-align: left;
 }
 
-.history__item:first-child .history__item-text {
-  margin-top: 12px;
-}
-
-.history__item:nth-child(3) .history__item-text,
-.history__item:nth-child(4) .history__item-text,
-.history__item:nth-child(8) .history__item-text {
-  max-width: 256px;
-}
-
 /* Mission */
 .mission {
   padding-top: 70px;

@@ -899,6 +899,7 @@ body #header:has(+ .banner) {
 /* Consult */
 .consult {
   padding-top: 48px;
+  margin-bottom: 138px;
 }
 
 .consult__visual {
@@ -1047,6 +1048,12 @@ body #header:has(+ .banner) {
   background: var(--standart-color-button);
   border-radius: 26px;
   font-size: 17px;
+}
+
+@media(max-width: 576px) {
+  .consult {
+    margin-bottom: 0;
+  }
 }
 
 /* Brands */

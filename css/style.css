@@ -101,6 +101,17 @@
     line-height: 21px;
     padding: 15px 25px;
 }
+.btn.btn-square {
+  background: #C5793D;
+  border-radius: 0;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 22px 13px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
 .section.seo-block {
   margin-top: 66px;
   font-size: 14px;

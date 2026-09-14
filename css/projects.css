@@ -60,7 +60,7 @@
 }
 
 .pagination {
-	padding: 95px 0 133px;
+	padding: 95px 0 85px;
     display: flex;
     justify-content: center;
     gap: 79px;
@@ -83,22 +83,38 @@
 	border-radius: 50%;
     font-weight: 700;
     font-size: 18px;
-    line-height: 23px;
+    line-height: normal;
     color: #fff;
 }
 
 .pagination ul li a {
     background: #C5793D;
     border: 1px solid #C5793D;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .pagination ul li.active,
-.pagination ul li.more a {
+.pagination ul li.more {
 	background: #D7D2D2;
     border: 1px solid #D7D2D2;
+}
+
+.pagination ul li.more {
+    position: relative;
+}
+
+.pagination ul li.more a {
+    font-size: 31px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent;
+    width: fit-content;
+    display: block;
+    border: 0;margin-top: -3px;
+    transform: translate(-50%, -50%);
 }
 
 .pagination .show-more {

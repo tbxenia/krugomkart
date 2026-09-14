@@ -16,13 +16,13 @@
 }
 
 .catalog-page .section-title {
-    font-weight: 800;
     font-size: 24px;
     line-height: 31px;
     letter-spacing: 0.05em;
     margin-bottom: 4px;
     color: #C5793D;
     text-transform: uppercase;
+    font-family: "Proxima Nova Extrabold";
 }
 
 .catalog-page .section-text {
@@ -102,7 +102,7 @@
     }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 380px) {
     .catalog__item {
         width: 100%;
     }

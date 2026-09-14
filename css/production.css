@@ -181,18 +181,36 @@
   margin-top: 48px;
 }
 
+.caps__row {
+  display: flex;
+  gap: 60px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.caps__block {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.caps__row .caps__figure {
+  text-align: center;
+}
+
 .caps__tag {
   display: inline-flex;
   align-items: center;
   height: 42px;
   padding: 0 24px;
   margin-bottom: 16px;
-  background: var(--standart-color-button);
+  background: #3F3F3F;
   font-family: var(--font-extrabold);
   font-size: 22px;
   font-weight: normal;
   line-height: 1.3;
   color: var(--white);
+  width: fit-content;
 }
 
 .caps__diameters-wrap {
@@ -238,6 +256,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: fit-content;
 }
 
 .caps__figure img {
@@ -286,6 +305,11 @@
   font-family: var(--font-semibold);
   font-size: 17px;
   color: var(--black);
+  text-align: center;
+}
+
+.prod-card__img {
+  margin-bottom: 17px;
 }
 
 /* Product cards */

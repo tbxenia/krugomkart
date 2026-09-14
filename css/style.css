@@ -364,6 +364,7 @@ body #header:has(+ .banner) {
   flex-direction: column;
   align-items: flex-start;
   padding: 50px 0 49px;
+  justify-content: center;
 }
 
 .banner__title {
@@ -899,7 +900,6 @@ body #header:has(+ .banner) {
 /* Consult */
 .consult {
   padding-top: 48px;
-  margin-bottom: 138px;
 }
 
 .consult__visual {
@@ -1048,12 +1048,6 @@ body #header:has(+ .banner) {
   background: var(--standart-color-button);
   border-radius: 26px;
   font-size: 17px;
-}
-
-@media(max-width: 576px) {
-  .consult {
-    margin-bottom: 0;
-  }
 }
 
 /* Brands */
@@ -2070,5 +2064,15 @@ body #header:has(+ .banner) {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+  }
+}
+
+.footer {
+  margin-top: 138px;
+}
+
+@media(max-width: 576px) {
+  .footer {
+    margin-top: 138px;
   }
 }

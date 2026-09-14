@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function () {
+
+});
+
 (function () {
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -52,13 +56,6 @@
   bindLeadForm($("#sample-form"), "Заявка на бесплатный образец отправлена");
 
   if (typeof Swiper === "undefined") return;
-
-  new Swiper(".banner__media", {
-    loop: true,
-    speed: 500,
-    slidesPerView: 1,
-    grabCursor: true,
-  });
 
   $$(".projects__slider, .reviews__slider, .blog__slider").forEach((el) => {
     const gap = el.classList.contains("reviews__slider") ? 13 : 20;

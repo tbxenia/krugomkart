@@ -7,6 +7,7 @@
 	<title>Кругом Картон — производство картонных тубусов под заказ</title>
 	<link rel="icon" href="./images/icons/logo.svg" type="image/svg+xml">
 	<link rel="stylesheet" href="./css/menu.css">
+	<link rel="stylesheet" href="./css/catalog.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -229,547 +230,248 @@
 		</div>
 	</div>
 
-	<section class="section container breadcrumbs">
-		<div class="breadcrumbs__item">
-			<a href="/" data-fragment="breacrumb-home">
-			<span property="name">Главная</span>
-			</a>
-			<meta property="position" content="1">
-		</div>
-		<div class="breadcrumbs__item active">
-			<span property="name">Каталог</span>
-			<meta property="position" content="2">
+	<section class="section container">
+		<div class="breadcrumb" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+			<div>
+				<span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+					<a itemprop="item" href="https://krugomkarton.ru/" rel="v:url" property="v:title">
+						Главная				                <meta itemprop="position" content="1">
+						<meta itemprop="name" content="Главная">
+					</a>
+				</span>
+				<span class="breadcrumb__separator">→</span> <span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://krugomkarton.ru/store"><span>Каталог <meta itemprop="position" content="2"><meta itemprop="name" content="Каталог"></span></a>
+				</span>
+			</div>
 		</div>
 	</section>
 
-	<h1 class="inner__h1">
-		КАТАЛОГ
+	<h1 class="inner__h1 --has-bg">
+		<div class="container">Каталог</div>
 	</h1>
 
-	<div class="section catalog --yellow">
+	<section class="section catalog-page --bg-brown">
 		<div class="container">
 			<h2 class="section-title">
 				ГОТОВЫЕ ТУБУСЫ
 			</h2>
 			<div class="section-text">
-				<p>У нас вы можете: заказать картонные тубусы с вашим логотипом, размерами и дизайном, заказать картонные тубусы с вашим логотипом, размерами и дизайном Мы продаем тубусы тиражом от 1 штуки и мелким и крупным оптом.</p> 
-				<p>Наши клиенты — крупные бренды и небольшие крафтовые компании.</p>
+				У нас вы можете: заказать картонные тубусы с вашим логотипом, размерами и дизайном, заказать картонные тубусы с вашим логотипом, размерами и дизайном Мы продаем тубусы тиражом от 1 штуки и мелким и крупным оптом. <br>
+				Наши клиенты — крупные бренды и небольшие крафтовые компании.
 			</div>
-			<div class="catalog-more">
-				<a href="#catalog">
-					<svg class="icon-eye" width="23" height="23" viewBox="0 0 23 23" fill="none" aria-hidden="true">
-						<path d="M0.94 11.5s3.74-7.67 10.29-7.67S21.52 11.5 21.52 11.5s-3.74 7.67-10.29 7.67S0.94 11.5 0.94 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-						<path d="M11.23 14.37a2.87 2.87 0 1 0 0-5.75 2.87 2.87 0 0 0 0 5.75Z" stroke="currentColor" stroke-width="2" />
+			<div class="catalog__list">
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-1.png" alt="Для пересылки">
+					</div>
+					<div class="catalog__item-title">
+						Для пересылки
+					</div>
+					<div class="catalog__item-text">Плакатов, чертежей,рулонов, деталей, хрупкого</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-2.png" alt="Новогодние">
+					</div>
+					<div class="catalog__item-title">
+						Новогодние
+					</div>
+					<div class="catalog__item-text">Серийная праздничная упаковка</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-3.png" alt="Для маркетплейсов">
+					</div>
+					<div class="catalog__item-title">
+						Для маркетплейсов
+					</div>
+					<div class="catalog__item-text">Плакатов, чертежей, рулонов, деталей</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-4.png" alt="Большие">
+					</div>
+					<div class="catalog__item-title">
+						Большие
+					</div>
+					<div class="catalog__item-text">Плакатов, чертежей, рулонов, деталей</div>
+				</a>
+			</div>
+			<div class="catalog__more">
+				<a href="#" class="btn btn-watch">
+					<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.599976 6.59998C0.599976 6.59998 3.59998 0.599976 8.84998 0.599976C14.1 0.599976 17.1 6.59998 17.1 6.59998C17.1 6.59998 14.1 12.6 8.84998 12.6C3.59998 12.6 0.599976 6.59998 0.599976 6.59998Z" stroke="#F3F3F3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M8.84998 8.84998C10.0926 8.84998 11.1 7.84262 11.1 6.59998C11.1 5.35733 10.0926 4.34998 8.84998 4.34998C7.60733 4.34998 6.59998 5.35733 6.59998 6.59998C6.59998 7.84262 7.60733 8.84998 8.84998 8.84998Z" stroke="#F3F3F3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
 					</svg>
-					<span>Смотреть все категории</span>
+					Смотреть все категории
 				</a>
 			</div>
 		</div>
+	</section>
+	<section class="section catalog-page --bg-blue">
+		<div class="container">
+			<h2 class="section-title">
+				ТУБУСЫ НА ЗАКАЗ
+			</h2>
+			<div class="section-text">
+				У нас вы можете: заказать картонные тубусы с вашим логотипом, размерами и дизайном, заказать картонные тубусы с вашим логотипом, размерами и дизайном Мы продаем тубусы тиражом от 1 штуки и мелким и крупным оптом. <br>
+				Наши клиенты — крупные бренды и небольшие крафтовые компании.
+			</div>
+			<div class="catalog__list">
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-5.png" alt="БАД">
+					</div>
+					<div class="catalog__item-title">
+						БАД
+					</div>
+					<div class="catalog__item-text">Упаковка сыпучих смесей или саше. Биодобавки, коллаген, протеин. </div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-6.png" alt="Диффузоры">
+					</div>
+					<div class="catalog__item-title">
+						Диффузоры
+					</div>
+					<div class="catalog__item-text">Стильная упаковка для домашнего и авто парфюмао</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-7.png" alt="Свечи">
+					</div>
+					<div class="catalog__item-title">
+						Свечи
+					</div>
+					<div class="catalog__item-text">Эстетичная упаковка для свечей и аромавоска</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-8.png" alt="Настольные игры">
+					</div>
+					<div class="catalog__item-title">
+						Настольные игры
+					</div>
+					<div class="catalog__item-text">Универсальная упаковка настолки или арены</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-9.png" alt="Канцелярия">
+					</div>
+					<div class="catalog__item-title">
+						Канцелярия
+					</div>
+					<div class="catalog__item-text">Упаковка  для набора карандашей, кистей, ручек</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-10.png" alt="">
+					</div>
+					<div class="catalog__item-title">
+						Обои
+					</div>
+					<div class="catalog__item-text">Надежная и привлекательная упаковка обоев и фотообоев</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-11.png" alt="Бутылки">
+					</div>
+					<div class="catalog__item-title">
+						Бутылки
+					</div>
+					<div class="catalog__item-text">Премиальная упаковка для щампанского, вина, коньяка</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-12.png" alt="Конфеты, сладости">
+					</div>
+					<div class="catalog__item-title">
+						Конфеты, сладости
+					</div>
+					<div class="catalog__item-text">Для домашнего и авто парфюма</div>
+				</a>
+			</div>
+			<div class="catalog__more">
+				<a href="#" class="btn btn-watch">
+					<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.599976 6.59998C0.599976 6.59998 3.59998 0.599976 8.84998 0.599976C14.1 0.599976 17.1 6.59998 17.1 6.59998C17.1 6.59998 14.1 12.6 8.84998 12.6C3.59998 12.6 0.599976 6.59998 0.599976 6.59998Z" stroke="#F3F3F3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M8.84998 8.84998C10.0926 8.84998 11.1 7.84262 11.1 6.59998C11.1 5.35733 10.0926 4.34998 8.84998 4.34998C7.60733 4.34998 6.59998 5.35733 6.59998 6.59998C6.59998 7.84262 7.60733 8.84998 8.84998 8.84998Z" stroke="#F3F3F3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+					Смотреть все категории
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="section catalog-page --bg-grey">
+		<div class="container">
+			<h2 class="section-title">
+				СОПУТСВУЮЩИЕ ТОВАРЫ
+			</h2>
+			<div class="section-text">
+				У нас вы можете: заказать картонные тубусы с вашим логотипом, размерами и дизайном, заказать картонные тубусы с вашим логотипом, размерами и дизайном Мы продаем тубусы тиражом от 1 штуки и мелким и крупным оптом. <br>
+				Наши клиенты — крупные бренды и небольшие крафтовые компании.
+			</div>
+			<div class="catalog__list">
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-13.png" alt="Для пересылки">
+					</div>
+					<div class="catalog__item-title">
+						Для пересылки
+					</div>
+					<div class="catalog__item-text">Плакатов, чертежей,рулонов, деталей, хрупкого</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-14.png" alt="Новогодние">
+					</div>
+					<div class="catalog__item-title">
+						Новогодние
+					</div>
+					<div class="catalog__item-text">Серийная праздничная упаковка</div>
+				</a>
+				<a href="#" class="catalog__list-item catalog__item">
+					<div class="catalog__item-img">
+						<img src="./images/catalog/catalog-15.png" alt="Новогодние">
+					</div>
+					<div class="catalog__item-title">
+						Новогодние
+					</div>
+					<div class="catalog__item-text">Серийная праздничная упаковка</div>
+				</a>
+			</div>
+			<div class="catalog__more">
+				<a href="#" class="btn btn-watch">
+					<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.599976 6.59998C0.599976 6.59998 3.59998 0.599976 8.84998 0.599976C14.1 0.599976 17.1 6.59998 17.1 6.59998C17.1 6.59998 14.1 12.6 8.84998 12.6C3.59998 12.6 0.599976 6.59998 0.599976 6.59998Z" stroke="#F3F3F3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M8.84998 8.84998C10.0926 8.84998 11.1 7.84262 11.1 6.59998C11.1 5.35733 10.0926 4.34998 8.84998 4.34998C7.60733 4.34998 6.59998 5.35733 6.59998 6.59998C6.59998 7.84262 7.60733 8.84998 8.84998 8.84998Z" stroke="#F3F3F3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+					Смотреть все категории
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="section container seo-block">
+		<p><b>Стандартные тубусы</b> – практичные упаковочные изделия цилиндрической формы, основой которых является гильза, полученная навивкой картонных полос на вал. Изготавливаются двух типов: композитные и футляры. Композитные изделия состоят из корпуса с пластиковой или металлической крышкой, футляры – полностью картонная упаковка с завальцованными краями, крышкой и дном.</p>
+
+		<p>
+			<b>Применение стандартных тубусов</b><br>
+			В компании «Кругом картон» всегда имеется складской запас изделий, позволяющий быстро выполнить заказ на их поставки. Цена на тубусы стандартного исполнения ниже, чем изготовленные по индивидуальным параметрам. Недорогая жесткая упаковка – оптимальный вариант для защиты полиграфической и другой продукции при пересылке.
+		</p>
+
+		<p>
+			<b>Наиболее популярные размеры стандартных тубусов для бумаги, пищевых продуктов и сувениров:</b>
+		</p>
+		<ul>
+			<li>диаметр 63 мм и высота 240, 330, 340, 450 мм – применяются для постеров, плакатов и другой полиграфии;</li>
+			<li>диаметр 92 мм и высота 160, 240, 350 мм – подходят для плакатов, календарей, интерьерных наклеек;</li>
+			<li>диаметр 120 мм, высота 90, 220, 350 мм – используются для фасовки чая, конфет, укладки сувениров.</li>
+		</ul>
+		<p>Подарочные тубусы украшают наклейками, конгревным тиснением и тампопечатью.</p>
+		<p>Дополнительные материалы от компании «Кругом картон»</p>
+		<p>В комплекте с основными товарами можно заказать: бумажный наполнитель, из офсетной или металлизованной бумаги, металлические или пластиковые крышки, ручки для руки или на плечо, петельку на крышку, ложемент.</p>
+		<p>Мы обеспечиваем: максимально быстрое выполнение заказа, высокое качество готовых изделий и возможность заказать доставку в любой населенный пункт России и СНГ.</p>
 	</div>
-
-
-	<section class="industries" id="industries">
-		<div class="container">
-			<h2 class="section-title">Нашу упаковку используют бренды из самых разных отраслей</h2>
-			<div class="section-subtitle">Производим цилиндрическую упаковку для:</div>
-			<div class="industries__grid">
-				<div class="category-card">
-					<div class="category-card__media">
-						<img src="images/cat-bad.png" alt="Упаковка для БАД">
-					</div>
-					<div class="category-card__title">БАД</div>
-					<div class="category-card__text">Упаковка сыпучих смесей или саше. Биодобавки</div>
-				</div>
-				<div class="category-card">
-					<div class="category-card__media">
-						<img src="images/cat-diffuzory.png" alt="Упаковка для диффузоров">
-					</div>
-					<div class="category-card__title">Диффузоры</div>
-					<div class="category-card__text">Стильная упаковка для домашнего и авто парфюма</div>
-				</div>
-				<div class="category-card">
-					<div class="category-card__media">
-						<img src="images/cat-svechi.png" alt="Упаковка для свечей">
-					</div>
-					<div class="category-card__title">Свечи</div>
-					<div class="category-card__text">Эстетичная упаковка для свечей и аромавоска</div>
-				</div>
-				<div class="category-card">
-					<div class="category-card__media">
-						<img src="images/cat-igry.png" alt="Упаковка для настольных игр">
-					</div>
-					<div class="category-card__title">Настольные игры</div>
-					<div class="category-card__text">Универсальная упаковка настолки или арены</div>
-				</div>
-				<div class="category-card">
-					<div class="category-card__media">
-						<img src="images/cat-oboi.png" alt="Упаковка для обоев">
-					</div>
-					<div class="category-card__title">Обои</div>
-					<div class="category-card__text">Надежная упаковка обоев и фотообоев</div>
-				</div>
-				<div class="category-card">
-					<div class="category-card__media">
-						<img src="images/cat-kancelyariya.png" alt="Упаковка для канцелярии">
-					</div>
-					<div class="category-card__title">Канцелярия</div>
-					<div class="category-card__text">Упаковка для набора карандашей, кистей, ручек</div>
-				</div>
-				<div class="category-card">
-					<div class="category-card__media">
-						<img src="images/cat-oboi.png" alt="Упаковка для обоев">
-					</div>
-					<div class="category-card__title">Обои</div>
-					<div class="category-card__text">Надежная и привлекательная упаковка обоев и фотообоев</div>
-				</div>
-				<div class="category-card">
-					<div class="category-card__media category-card__media--stack">
-						<img src="images/cat-shampanskoe.png" alt="Упаковка для бутылок">
-					</div>
-					<div class="category-card__title">Бутылки</div>
-					<div class="category-card__text">Премиальная упаковка для шампанского, вина, коньяка</div>
-				</div>
-				<div class="category-card">
-					<div class="category-card__media">
-						<img src="images/cat-bad.png" alt="Упаковка для БАД">
-					</div>
-					<div class="category-card__title">БАД</div>
-					<div class="category-card__text">Упаковка сыпучих смесей или саше. Биодобавки</div>
-				</div>
-				<div class="category-card --last">
-					<a class="more-tile more-tile--muted" href="#catalog">
-						<svg class="icon-eye" width="23" height="23" viewBox="0 0 23 23" fill="none" aria-hidden="true">
-							<path d="M0.94 11.5s3.74-7.67 10.29-7.67S21.52 11.5 21.52 11.5s-3.74 7.67-10.29 7.67S0.94 11.5 0.94 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							<path d="M11.23 14.37a2.87 2.87 0 1 0 0-5.75 2.87 2.87 0 0 0 0 5.75Z" stroke="currentColor" stroke-width="2" />
-						</svg>
-						<span>Смотреть<br>все категории</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="types" id="catalog">
-		<div class="container">
-			<h2 class="section-title">Типы тубусов и конструкции</h2>
-			<p class="section-subtitle">Подберем оптимальную конструкцию под ваш продукт</p>
-			<div class="types__grid">
-				<div class="type-card">
-					<div class="type-card__media"><img src="images/type-packaging.png" alt="Упаковочные тубусы"></div>
-					<div class="type-card__title">Упаковочные тубусы</div>
-					<div class="type-card__text">для пересылки и транспортировки</div>
-				</div>
-				<div class="type-card">
-					<div class="type-card__media"><img src="images/type-custom.png" alt="Тубусы на заказ"></div>
-					<div class="type-card__title">Тубусы на заказ</div>
-					<div class="type-card__text">с индивидуальным дизайном и фурнитурой</div>
-				</div>
-				<div class="type-card">
-					<div class="type-card__media"><img src="images/type-case.png" alt="Тубусы-футляры"></div>
-					<div class="type-card__title">Тубусы-футляры</div>
-					<div class="type-card__text">с картонной крышкой, 24 вида конструкций</div>
-				</div>
-				<div class="type-card">
-					<div class="type-card__media"><img src="images/type-food-foil.png" alt="Пищевая упаковка"></div>
-					<div class="type-card__title">Пищевая упаковка</div>
-					<div class="type-card__text">легковскрываемые крышки и фольга внутри</div>
-				</div>
-				<div class="type-card">
-					<div class="type-card__media"><img src="images/type-dispenser.png" alt="Тубусы с дозатором"></div>
-					<div class="type-card__title">Тубусы с дозатором</div>
-					<div class="type-card__text">пластиковым или картонным для сыпучих продуктов</div>
-				</div>
-				<div class="type-card">
-					<div class="type-card__media"><img src="images/type-food.png" alt="Подарочная упаковка"></div>
-					<div class="type-card__title">Подарочная упаковка</div>
-					<div class="type-card__text">серийная праздничная упаковка, НГ</div>
-				</div>
-				<div class="type-card">
-					<div class="type-card__media"><img src="images/type-gift-7edf95.png" alt="Тубусы для маркетплейсов"></div>
-					<div class="type-card__title">Для маркетплейсов</div>
-					<div class="type-card__text">популярные размеры в прочном исполнении</div>
-				</div>
-				<div class="type-card">
-					<div class="type-card__media"><img src="images/type-custom.png" alt="Тубусы на заказ"></div>
-					<div class="type-card__title">Тубусы на заказ</div>
-					<div class="type-card__text">с индивидуальным дизайном и фурнитурой</div>
-				</div>
-				<div class="type-card">
-					<div class="type-card__media"><img src="images/type-case.png" alt="Тубусы-футляры"></div>
-					<div class="type-card__title">Тубусы-футляры</div>
-					<div class="type-card__text">с картонной крышкой, 24 вида конструкций</div>
-				</div>
-				<div class="type-card --last">
-					<a class="more-tile more-tile--accent" href="#catalog">
-						<svg class="icon-eye" width="23" height="23" viewBox="0 0 23 23" fill="none" aria-hidden="true">
-							<path d="M0.94 11.5s3.74-7.67 10.29-7.67S21.52 11.5 21.52 11.5s-3.74 7.67-10.29 7.67S0.94 11.5 0.94 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							<path d="M11.23 14.37a2.87 2.87 0 1 0 0-5.75 2.87 2.87 0 0 0 0 5.75Z" stroke="currentColor" stroke-width="2" />
-						</svg>
-						<span>Смотреть<br>все типы</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="production" id="production">
-		<div class="container">
-			<h2 class="section-title">Производство в Санкт-Петербурге</h2>
-			<div class="production__lead">Наше производство картонных тубусов в Санкт-Петербурге. Изготавливаем цилиндрическую упаковку из картона для брендов России и ЕАЭС, обеспечивая точные сроки и стабильное качество. Мы выпускаем партии от 100 до 50 000 шт и обеспечиваем контроль качества по ТУ и стандартам ЕАЭС.</div>
-			<div class="production__gallery">
-				<img src="images/factory-1-71f201.png" alt="Оборудование производства" width="394" height="242">
-				<img src="images/factory-2.png" alt="Сотрудник производства" width="363" height="242">
-				<img src="images/factory-3.png" alt="Склад готовой продукции" width="363" height="242">
-			</div>
-			<div class="features">
-				<div class="features__item">
-					<img class="features__icon" src="images/feat-years.png" alt="">
-					<div class="features__title">Более 12 лет на рынке производства упаковки</div>
-					<div class="features__text">производим упаковку с 2013 года для брендов России и ЕАЭС</div>
-				</div>
-				<div class="features__item">
-					<img class="features__icon" src="images/feat-equipment.png" alt="">
-					<div class="features__title">Современное оборудование</div>
-					<div class="features__text">работаем на линиях навивки, оклейки и резки втулок автоматические линии HD-650, гильзорезы, системы оклейки</div>
-				</div>
-				<div class="features__item">
-					<img class="features__icon" src="images/feat-volume.png" alt="">
-					<div class="features__title">Производим тиражи от 100 до 50 000 шт</div>
-					<div class="features__text">Оптимальные тиражи — от тестовых серий до промышленного объёма.</div>
-				</div>
-				<div class="features__item">
-					<img class="features__icon" src="images/feat-eco.png" alt="">
-					<div class="features__title">Экологичные материалы</div>
-					<div class="features__text">Используем сертифицированное сырьё и безопасные компоненты.</div>
-				</div>
-				<div class="features__item">
-					<img class="features__icon" src="images/feat-quality.png" alt="">
-					<div class="features__title">Контроль качества по ТУ и EAC</div>
-					<div class="features__text">Каждая партия проходит проверку размеров и прочности склейки.</div>
-				</div>
-			</div>
-			<a class="btn btn--pill" href="#about">Подробнее о производстве</a>
-		</div>
-	</section>
-
-	<section class="projects" id="projects">
-		<div class="container">
-			<h2 class="section-title">Реализованные проекты</h2>
-			<div class="section-subtitle section-subtitle--wide">Реальные проекты наших клиентов. От простых крафтовых тубусов до сложных бренд-решений с фольгированием и УФ-лаком</div>
-			<div class="projects__grid">
-				<div class="project-card">
-					<img class="project-card__image" src="images/project-1-304910.png" alt="Тубусы для свечей DOMA">
-					<div class="project-card__title">Тубусы для свечей DOMA</div>
-					<div class="project-card__text">Тубус-футляр размер 92×180 мм конструкции 3К-Н с этикеткой с софт-тач ламинацией и тиснением серебряной фольгой.</div>
-				</div>
-				<div class="project-card">
-					<img class="project-card__image" src="images/project-2-7290d3.png" alt="Упаковка для крем-сыворотки">
-					<div class="project-card__title">Упаковка для крем-сыворотки</div>
-					<div class="project-card__text">Тубус композитный 40×120, этикетка мелованная с глянцевой ламинацией</div>
-				</div>
-				<div class="project-card">
-					<img class="project-card__image" src="images/project-3-122fa6.png" alt="Картонная банка для БАД">
-					<div class="project-card__title">Картонная банка для БАД</div>
-					<div class="project-card__text">Фольгированный слой внутри, контроль вскрытия. Этикетка дизайнерский крафт и полноцветная печать</div>
-				</div>
-			</div>
-			<div class="projects__bottom">
-				<a class="btn btn--pill" href="#catalog">
-					<svg class="icon-eye" width="24" height="23" viewBox="0 0 23 23" fill="none" aria-hidden="true">
-						<path d="M0.94 11.5s3.74-7.67 10.29-7.67S21.52 11.5 21.52 11.5s-3.74 7.67-10.29 7.67S0.94 11.5 0.94 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-						<path d="M11.23 14.37a2.87 2.87 0 1 0 0-5.75 2.87 2.87 0 0 0 0 5.75Z" stroke="currentColor" stroke-width="2" />
-					</svg>
-					Смотреть портфолио
-				</a>
-				<p class="projects__note">Более 800 брендов доверяют нам производство своей упаковки</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="stages" id="stages">
-		<div class="container">
-			<h2 class="section-title">Этапы работы</h2>
-		</div>
-		<div class="stages__map">
-			<img class="stages__path" src="images/line.svg" alt="" width="1365" height="460">
-			<div class="container">
-				<ol class="stages__list">
-					<li class="stages__item">
-						<span class="stages__num">1</span>
-						<img class="stages__icon" src="images/step-1.png" alt="" width="124" height="124">
-						<h3 class="stages__title">Расчет стоимости тиража</h3>
-						<p class="stages__text">Онлайн или по заявке менеджеру с указанием размеров и тиража.</p>
-					</li>
-					<li class="stages__item">
-						<span class="stages__num">2</span>
-						<img class="stages__icon" src="images/step-2.png" alt="" width="130" height="135">
-						<h3 class="stages__title">Подготовка дизайна<br>по тех. требованиям</h3>
-						<p class="stages__text">Создание или адаптация макета по техтребованиям.</p>
-					</li>
-					<li class="stages__item">
-						<span class="stages__num">3</span>
-						<img class="stages__icon" src="images/step-3.png" alt="" width="155" height="133">
-						<h3 class="stages__title">Согласование деталей<br>и заключение договора</h3>
-						<p class="stages__text">Утверждаем параметры заказа, сроки, тираж и условия оплаты.</p>
-					</li>
-					<li class="stages__item">
-						<span class="stages__num">4</span>
-						<img class="stages__icon" src="images/step-4.png" alt="" width="141" height="125">
-						<h3 class="stages__title">Внесение оплаты</h3>
-						<p class="stages__text">Работаем по договору — фиксируем срок и запускаем производство после оплаты.</p>
-					</li>
-					<li class="stages__item">
-						<span class="stages__num">5</span>
-						<img class="stages__icon" src="images/step-5.png" alt="" width="91" height="125">
-						<h3 class="stages__title">Согласование предсерийного образца</h3>
-						<p class="stages__text">Изготавливаем тестовый экземпляр для подтверждения цвета, бумаги и сборки.</p>
-					</li>
-					<li class="stages__item">
-						<span class="stages__num">6</span>
-						<img class="stages__icon" src="images/step-6.png" alt="" width="148" height="121">
-						<h3 class="stages__title">Производство и доставка партии</h3>
-						<p class="stages__text">Основное производство, контроль качества, упаковка и доставка по России и ЕАЭС.</p>
-					</li>
-				</ol>
-			</div>
-		</div>
-	</section>
-
-	<section class="reviews" id="reviews">
-		<div class="container">
-			<h2 class="section-title section-title--center-mobile">Что говорят наши клиенты</h2>
-			<div class="reviews__grid">
-				<article class="review-card">
-					<div class="review-card__head">
-						<img class="review-card__avatar" src="images/review-1.png" alt="Сергей Петраковский">
-						<div>
-							<div class="review-card__name">Сергей
-								<br>Петраковский</div>
-							<div class="review-card__role">генеральный директор
-								<br>«CompanyName»</div>
-						</div>
-					</div>
-					<div class="review-card__text">“Повседневная практика показывает, что консультация с широким активом позволяет оценить значение соответствующий условий активизации. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач”.</div>
-					<div class="review-card__project">
-						<img src="images/project-1-304910.png" alt="">
-						<p>Проект: Тубусы для БАД EasyTime</p>
-					</div>
-				</article>
-				<article class="review-card">
-					<div class="review-card__head">
-						<img class="review-card__avatar" src="images/review-2.png" alt="Федор Сергеев">
-						<div>
-							<div class="review-card__name">Федор Сергеев</div>
-							<div class="review-card__role">ведущий маркетолог
-								<br>«CosmeticsCompany»</div>
-						</div>
-					</div>
-					<div class="review-card__text">“Задача организации, в особенности же рамки и место обучения кадров позволяет выполнять важные задания по разработке модели развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки модели развития”.</div>
-					<div class="review-card__project">
-						<img src="images/project-2-7290d3.png" alt="">
-						<p>Проект: Тубусы для свечей DOME</p>
-					</div>
-				</article>
-				<article class="review-card">
-					<div class="review-card__head">
-						<img class="review-card__avatar" src="images/review-3.png" alt="Инна Евсеенко">
-						<div>
-							<div class="review-card__name">Инна Евсеенко</div>
-							<div class="review-card__role">коммерческий директор
-								<br>«CompanyName»</div>
-						</div>
-					</div>
-					<div class="review-card__text">“Разнообразный и богатый опыт укрепление и развитие структуры требуют определения и уточнения форм развития. Задача организации, в особенности же консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач”.</div>
-					<div class="review-card__project">
-						<img src="images/project-3-122fa6.png" alt="">
-						<p>Проект: Упаковка для корма Homa</p>
-					</div>
-				</article>
-			</div>
-			<a class="btn btn--yandex" href="https://yandex.ru/maps/" target="_blank" rel="noopener">
-				Смотреть все отзывы на <b>Яндексе</b>
-			</a>
-		</div>
-	</section>
-
-	<section class="consult" id="consult">
-		<div class="container">
-			<img class="consult__visual" src="images/consult-tubes-2b5421.png" alt="Картонные тубусы">
-			<form class="consult__form" id="consult-form" novalidate>
-				<h2 class="consult__title">Заявка на консультацию</h2>
-				<p class="consult__text">У вас остались вопросы? Заполните форму ниже и получите оперативную консультацию нашего специалиста</p>
-				<div class="consult__fields">
-					<label class="consult__field">
-						<span>Ваше имя</span>
-						<input type="text" name="name" placeholder="Бронислав Броненосцев" required>
-					</label>
-					<label class="consult__field">
-						<span>Телефон</span>
-						<input type="tel" name="phone" placeholder="+7 904 640-60-66" required>
-					</label>
-					<button class="btn btn--consult" type="submit">Отправить</button>
-				</div>
-				<label class="consult__agree">
-					<input type="checkbox" name="agree" required checked>
-					<span class="consult__check" aria-hidden="true"></span>
-					<span>Нажимая кнопку «Рассчитать», я соглашаюсь с условиями <a href="#">Политики конфиденциальности</a></span>
-				</label>
-				<p class="consult__success" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
-			</form>
-		</div>
-	</section>
-
-	<section class="brands">
-		<div class="container">
-			<h2 class="brands__title">Нам доверяют крупные и локальные бренды</h2>
-			<div class="brands__list">
-				<div class="brands__item"><img src="images/clients/Banka-home-100x100.png" alt="Banka Home"></div>
-				<div class="brands__item"><img src="images/clients/Mirrose-100x100.png" alt="Mirrose"></div>
-				<div class="brands__item"><img src="images/clients/logo-megafon-109x100.png" alt="Мегафон"></div>
-				<div class="brands__item"><img src="images/clients/schastie-100x100-100x100.png" alt="Счастье"></div>
-				<div class="brands__item"><img src="images/clients/standers-100x100-100x100.png" alt="Stenders"></div>
-				<div class="brands__item"><img src="images/clients/estel-100x100-100x100.png" alt="Estel"></div>
-				<div class="brands__item"><img src="images/clients/ermitage-100x100-100x100.png" alt="Эрмитаж"></div>
-				<div class="brands__item"><img src="images/clients/xerox-100x100-100x100.png" alt="Xerox"></div>
-				<div class="brands__item"><img src="images/clients/alta-vina-100x100-100x100.png" alt="Альта Вина"></div>
-				<div class="brands__item"><img src="images/clients/Rive-Gauche-100x100.png" alt="Рив Гош"></div>
-				<div class="brands__item"><img src="images/clients/Divina-Terra-100x100.png" alt="Divina Terra"></div>
-				<div class="brands__item"><img src="images/clients/Impex-Agro-100x100.png" alt="Impex Agro"></div>
-				<div class="brands__item"><img src="images/clients/Bo-Zhur-100x100.png" alt="Bo Zhur"></div>
-				<div class="brands__item"><img src="images/clients/Magic-Jar-100x100.png" alt="Magic Jar"></div>
-				<div class="brands__item"><img src="images/clients/Varvara-100x100.png" alt="Varvara"></div>
-				<div class="brands__item"><img src="images/clients/monster-energy-100x100-100x100.png" alt="Monster Energy"></div>
-				<div class="brands__item"><img src="images/clients/logo-2gis-88x100.png" alt="2ГИС"></div>
-				<div class="brands__item"><img src="images/clients/korus-konsalting-100x100-100x100.png" alt="Корус Консалтинг"></div>
-				<div class="brands__item"><img src="images/clients/Quartz Master-100x100.png" alt="Quartz Master"></div>
-				<div class="brands__item"><img src="images/clients/%D0%AD%D0%BA%D1%81%D0%BF%D0%BE%D0%B1%D0%B0%D0%BD%D0%BA-100x100.png" alt="Экспобанк"></div>
-			</div>
-		</div>
-	</section>
-
-	<section class="docs" id="docs">
-		<div class="container">
-			<h2 class="section-title">Надёжная и сертифицированная упаковка</h2>
-			<p class="section-subtitle section-subtitle--wide">Изготавливаем упаковку, соответствующую требованиям ЕАЭС и стандартам безопасности для пищевой и косметической продукции</p>
-			<div class="docs__grid">
-				<a class="docs__item" href="images/doc-svidetelstvo.png" download>
-					<div class="docs__download" aria-hidden="true">
-						<img src="images/icons/download.svg" alt="">
-					</div>
-					<img src="images/doc-svidetelstvo.png" alt="Свидетельство">
-					<span>Свидетельство</span>
-				</a>
-				<a class="docs__item" href="images/doc-tu.png" download>
-					<div class="docs__download" aria-hidden="true">
-						<img src="images/icons/download.svg" alt="">
-					</div>
-					<img src="images/doc-tu.png" alt="Технические условия">
-					<span>Технические условия</span>
-				</a>
-				<a class="docs__item" href="images/doc-deklaraciya.png" download>
-					<div class="docs__download" aria-hidden="true">
-						<img src="images/icons/download.svg" alt="">
-					</div>
-					<img src="images/doc-deklaraciya.png" alt="Декларация о соответствии EAC">
-					<span>Декларация<br>о соответствии EAC</span>
-				</a>
-				<a class="docs__item" href="images/doc-protokol.png" download>
-					<div class="docs__download" aria-hidden="true">
-						<img src="images/icons/download.svg" alt="">
-					</div>
-					<img src="images/doc-protokol.png" alt="Протокол испытаний о безопасности">
-					<span>Протокол испытаний<br>о безопасности</span>
-				</a>
-			</div>
-			<p class="docs__note">Продукция «Кругом Картон» проходит внутренний контроль качества и подтверждена декларациями соответствия ЕАЭС.
-				<br>Все материалы безопасны для контакта с продуктами питания и косметикой.</p>
-			<p class="docs__link">Все документы доступны для скачивания в разделе <a href="#docs">Информация → Документы</a></p>
-		</div>
-	</section>
-
-	<section class="about" id="about">
-		<div class="container about__inner">
-			<div class="about__content">
-				<article class="about__item">
-					<h3>Привлекайте внимание</h3>
-					<p>Мы верим, что успех приходит, когда удаётся быть услышанным в информационном потоке и управлять впечатлением клиента. В такие решающие моменты упаковка важна не меньше, чем сам продукт.</p>
-				</article>
-				<article class="about__item">
-					<h3>Продавайте больше</h3>
-					<p>Мы создаём упаковку, которая помогает увеличить прибыль даже в условиях жёсткой конкуренции. Она привлекает внимание, побуждает к покупке, формирует доверие и регулярный спрос.</p>
-				</article>
-				<article class="about__item">
-					<h3>Берегите природу</h3>
-					<p>Мы используем материалы, безопасные для окружающей среды: биоразлагаемое и компостируемое сырьё. Упаковку можно переработать или использовать повторно.</p>
-				</article>
-				<a class="btn btn--pill" href="#about">О компании</a>
-			</div>
-			<div class="about__visual">
-				<img src="images/about-photo-703773.png" alt="Премиальные тубусы и флаконы">
-			</div>
-		</div>
-	</section>
-
-	<section class="consult sample" id="sample">
-		<div class="container">
-			<img class="consult__visual" src="images/sample-tubes-5ec929.png" alt="Образцы картонных тубусов">
-			<form class="consult__form sample__form" id="sample-form" novalidate>
-				<h2 class="consult__title">Получите бесплатный образец упаковки</h2>
-				<p class="consult__text">Мы отправим 1–2 образца тубусов выбранного типа, чтобы вы могли оценить качество картона, печати и нанесения этикетки.</p>
-				<div class="sample__grid">
-					<label class="consult__field">
-						<span>Ваше имя</span>
-						<input type="text" name="name" placeholder="Бронислав Броненосцев" required>
-					</label>
-					<label class="consult__field sample__comment">
-						<span>Какие образцы нашей продукции вас интересуют</span>
-						<textarea name="comment" rows="4" placeholder="Тубус диаметр 73 высота 160 мм с дизайнерской матовой бумагой желтого цвета" required></textarea>
-					</label>
-					<label class="consult__field">
-						<span>Телефон</span>
-						<input type="tel" name="phone" placeholder="+7 904 640-60-66" required>
-					</label>
-				</div>
-				<label class="consult__agree">
-					<input type="checkbox" name="agree" required checked>
-					<span class="consult__check" aria-hidden="true"></span>
-					<span>Нажимая кнопку «Рассчитать», я соглашаюсь с условиями <a href="#">Политики конфиденциальности</a></span>
-				</label>
-				<button class="btn btn--sample" type="submit">Получить образец</button>
-				<p class="consult__success" hidden>Заявка на образец отправлена. Мы свяжемся с вами для уточнения деталей.</p>
-			</form>
-		</div>
-	</section>
-
-	<section class="blog" id="blog">
-		<div class="container">
-			<h2 class="section-title">Блог о картонной упаковке</h2>
-			<div class="section-subtitle">Полезные статьи, примеры брендов, советы по выбору тубусов и новости компании</div>
-			<div class="blog__grid">
-				<div class="blog-card">
-					<a class="blog-card__media" href="#">
-						<img src="images/blog-compare.png" alt="Сравнение круглой коробки и навивного тубуса" width="371" height="247">
-					</a>
-					<div class="blog-card__title"><a href="#">Чем тубус отличается от круглой коробки</a></div>
-				</div>
-				<div class="blog-card">
-					<a class="blog-card__media" href="#">
-						<img src="images/blog-carousel.png" alt="Подарочная коробка-карусель" width="371" height="247">
-					</a>
-					<div class="blog-card__title"><a href="#">Подарочная упаковка-карусель</a></div>
-				</div>
-				<div class="blog-card">
-					<a class="blog-card__media" href="#">
-						<img src="images/blog-ypen.png" alt="Тубусы для ручек YPEN" width="371" height="247">
-					</a>
-					<div class="blog-card__title"><a href="#">Тубус для ручки: упаковка как часть бренда</a></div>
-				</div>
-			</div>
-			<div class="blog__more">
-				<a class="btn btn--pill" href="#blog">Читать все статьи</a>
-			</div>
-		</div>
-	</section>
 
 	<div class="footer">
 		<div class="wrap">

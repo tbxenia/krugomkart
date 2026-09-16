@@ -98,7 +98,7 @@
   content: "";
   position: absolute;
   left: -80px;
-  top: 40px;
+  top: 0;
   width: 1307px;
   height: 138px;
   background: url("../images/production/cycle-line.svg") no-repeat left top;
@@ -335,7 +335,7 @@
 .prod-card__media {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 140px;
   margin-bottom: 12px;
 }
@@ -376,7 +376,7 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 1.3;
-  color: var(--black);
+  color: var(--ink);
 }
 
 .prod-card--print .prod-card__title {
@@ -448,7 +448,7 @@
 .tech__table {
   width: 100%;
   border-collapse: collapse;
-  background: var(--white);
+  background: #E9E9E9;
 }
 
 .tech__table th,
@@ -458,17 +458,17 @@
   text-align: left;
   vertical-align: top;
   font-family: var(--font);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: normal;
   line-height: 1.3;
   color: var(--black);
-  border: 1px solid #dedede;
 }
 
 .tech__table th {
   font-family: var(--font-bold);
-  font-size: 17px;
-  background: var(--white);
+  font-size: 16px;
+  background: var(--ink);
+  color: var(--white);
 }
 
 .tech__table td:first-child {
@@ -478,10 +478,6 @@
 /* Consult */
 .page-production .consult {
   padding-top: 48px;
-}
-
-.tech {
-  padding-bottom: 108px;
 }
 
 @media (max-width: 576px) {

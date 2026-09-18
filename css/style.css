@@ -1484,7 +1484,6 @@ body #header:has(+ .banner) {
     font-family: var(--font-semibold);
     font-size: 14px;
     font-weight: normal;
-    text-align: center;
     line-height: 1.3;
   }
 

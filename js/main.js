@@ -1,5 +1,117 @@
 document.addEventListener('DOMContentLoaded', function () {
-
+  const teamSlider = new Swiper(".team__gallery", {
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    loop: false,
+    speed: 1200,
+    pagination: false,
+    lazy: {
+      loadPrevNext: true,
+      loadPrevNextAmount: 1,
+      loadOnTransitionStart: true
+    },
+    navigation: false,
+    pagination: {
+      el: '.team .swiper-pagination',
+      clickable: true,
+      type: 'bullets',
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    spaceBetween: 31,
+    breakpoints: {
+        0: {
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          spaceBetween: 16,
+        },
+        768: {
+          slidesPerView: 3,
+          centeredSlides: false,
+          spaceBetween: 31,
+        },
+    }
+  });
+  const logisticsSlider = new Swiper(".logistics__gallery", {
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    loop: false,
+    speed: 1200,
+    pagination: false,
+    lazy: {
+      loadPrevNext: true,
+      loadPrevNextAmount: 1,
+      loadOnTransitionStart: true
+    },
+    navigation: false,
+    pagination: {
+      el: '.logistics .swiper-pagination',
+      clickable: true,
+      type: 'bullets',
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    spaceBetween: 31,
+    breakpoints: {
+        0: {
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          spaceBetween: 16,
+        },
+        768: {
+          slidesPerView: 3,
+          centeredSlides: false,
+          spaceBetween: 31,
+        },
+    }
+  });
+  const equipSlider = new Swiper(".equip__list", {
+    slidesPerView: 4,
+    slidesPerGroup: 1,
+    loop: false,
+    grid: {
+      rows: 2,         // Количество рядов
+      fill: 'row',     // Заполнение по строкам (опционально)
+    },
+    speed: 1200,
+    pagination: false,
+    lazy: {
+      loadPrevNext: true,
+      loadPrevNextAmount: 1,
+      loadOnTransitionStart: true
+    },
+    navigation: false,
+    pagination: {
+      el: '.equip .swiper-pagination',
+      clickable: true,
+      type: 'bullets',
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    spaceBetween: 31,
+    breakpoints: {
+        0: {
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          spaceBetween: 16,
+          grid: {
+            rows: 1,         // Количество рядов
+            fill: 'row',     // Заполнение по строкам (опционально)
+          },
+        },
+        768: {
+          slidesPerView: 3,
+          centeredSlides: false,
+          spaceBetween: 31,
+        },
+    }
+  });
 });
 
 (function () {
@@ -83,3 +195,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 })();
+

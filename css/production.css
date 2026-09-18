@@ -36,10 +36,6 @@
   filter: none;
 }
 
-.page-production .tabs {
-  padding-top: 36px;
-}
-
 .page-text,
 .section-text {
   font-family: var(--font);
@@ -145,9 +141,6 @@
 }
 
 .equip__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 28px 16px;
   margin-top: 20px;
 }
 
@@ -177,7 +170,7 @@
   max-width: 1090px;
 }
 
-.caps__block {
+.caps__block.caps__wrapper {
   margin-top: 48px;
 }
 
@@ -467,7 +460,7 @@
 .tech__table th {
   font-family: var(--font-bold);
   font-size: 16px;
-  background: var(--ink);
+  background: var(--dark-2);
   color: var(--white);
 }
 
@@ -538,11 +531,6 @@
     font-size: 13px;
   }
 
-  .equip__list {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
   .equip__item img {
     height: 200px;
   }
@@ -600,33 +588,18 @@
     display: none;
   }
 
-  .tech__table th,
-  .tech__table td {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .tech__table thead {
-    display: none;
-  }
-
-  .tech__table tr {
-    display: block;
-    margin-bottom: 12px;
-    border: 1px solid #dedede;
-  }
-
-  .tech__table td {
-    border: 0;
-    border-bottom: 1px solid #dedede;
-  }
-
-  .tech__table td:last-child {
-    border-bottom: 0;
-  }
-
   .page-production .consult {
     padding-bottom: 48px;
   }
+}
+
+.team .swiper-pagination-bullets.swiper-pagination-horizontal,
+.equip .swiper-pagination-bullets.swiper-pagination-horizontal,
+.logistics  .swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: relative;
+  top: 0;
+}
+
+.docs+.logistics {
+  padding-top: 0;
 }

@@ -1497,13 +1497,6 @@ body #header:has(+ .banner) {
     font-size: 12px;
   }
 
-  .docs .section-subtitle,
-  .docs .section-subtitle--wide {
-    font-family: var(--font);
-    font-size: 11px;
-    text-align: left;
-  }
-
   .banner__inner {
     flex-direction: column;
     min-height: 0;

@@ -169,6 +169,59 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (typeof Swiper === "undefined") return;
 
+  // «Возможности производства»: на мобильных карточки — карусели со скроллбаром
+  const capsCarousels = $$(".caps__carousel");
+  if (capsCarousels.length) {
+    const mobileQuery = window.matchMedia("(max-width: 576px)");
+    const capsSliders = [];
+
+    const enableCaps = () => {
+      capsCarousels.forEach((block) => {
+        const slider = $(".caps__slider", block);
+        const wrapper = $(".prod-grid", block);
+        const scrollbar = $(".caps__scrollbar", block);
+        if (!slider || !wrapper || !scrollbar) return;
+        slider.classList.add("swiper");
+        wrapper.classList.add("swiper-wrapper");
+        $$(".prod-card", wrapper).forEach((card) => card.classList.add("swiper-slide"));
+        capsSliders.push(
+          new Swiper(slider, {
+            slidesPerView: "auto",
+            spaceBetween: wrapper.classList.contains("prod-grid--print") ? 15 : 12,
+            slidesOffsetAfter: 15,
+            speed: 500,
+            grabCursor: true,
+            scrollbar: {
+              el: scrollbar,
+              draggable: true,
+            },
+          })
+        );
+      });
+    };
+
+    const disableCaps = () => {
+      capsSliders.splice(0).forEach((swiper) => swiper.destroy(true, true));
+      capsCarousels.forEach((block) => {
+        const slider = $(".caps__slider", block);
+        const wrapper = $(".prod-grid", block);
+        if (slider) slider.classList.remove("swiper");
+        if (wrapper) {
+          wrapper.classList.remove("swiper-wrapper");
+          $$(".prod-card", wrapper).forEach((card) => card.classList.remove("swiper-slide"));
+        }
+      });
+    };
+
+    const syncCaps = () => {
+      disableCaps();
+      if (mobileQuery.matches) enableCaps();
+    };
+
+    syncCaps();
+    mobileQuery.addEventListener("change", syncCaps);
+  }
+
   $$(".projects__slider, .reviews__slider, .blog__slider").forEach((el) => {
     const gap = el.classList.contains("reviews__slider") ? 13 : 20;
     const pagination =

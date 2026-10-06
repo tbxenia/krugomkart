@@ -305,6 +305,12 @@
   margin-bottom: 17px;
 }
 
+/* Только мобильные: сокращённый текст и скроллбар каруселей */
+.caps__ellipsis,
+.caps__scrollbar {
+  display: none;
+}
+
 /* Product cards */
 .prod-grid {
   display: grid;
@@ -545,32 +551,207 @@
     font-size: 11px;
   }
 
-  .caps__tag {
-    height: 20px;
-    padding: 0 12px;
+  /* Capabilities: шапка блока */
+  .caps .section-subtitle {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .caps .section-text {
+    margin-top: 10px;
     font-size: 13px;
-    margin-bottom: 10px;
+    line-height: 1.3;
   }
 
-  .caps__split,
-  .caps__liners,
-  .caps__sizes {
-    grid-template-columns: 1fr;
+  .caps__ellipsis {
+    display: inline;
+  }
+
+  .caps__more {
+    display: none;
+  }
+
+  .caps__block.caps__wrapper {
+    margin-top: 40px;
+  }
+
+  .caps__tag {
+    height: 24px;
+    padding: 0 9px;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  /* Диаметры */
+  .caps__diameters-wrap {
+    width: 100%;
+  }
+
+  /* Длина */
+  .caps__row {
     flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
   }
 
-  .prod-grid,
-  .prod-grid--print {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px 12px;
+  .caps__row .caps__block {
+    gap: 6px;
   }
 
-  .prod-grid--lids {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .caps__row .caps__img img {
+    display: block;
+    width: auto;
+    height: 37px;
+    max-width: 100%;
   }
 
-  .prod-card--wide {
-    grid-column: span 2;
+  .caps__row .caps__figure {
+    width: auto;
+  }
+
+  .caps__figure span {
+    font-size: 12px;
+  }
+
+  /* Толщина стенки и внутренний слой */
+  .caps__split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .caps__split .caps__tag {
+    margin-bottom: 8px;
+  }
+
+  .caps__wall .caps__figure {
+    gap: 4px;
+  }
+
+  .caps__wall .caps__figure img {
+    width: 195px;
+    max-width: 100%;
+  }
+
+  .caps__wall-label,
+  .caps__liner {
+    font-size: 13px;
+  }
+
+  .caps__liners {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 30px;
+  }
+
+  .caps__liner {
+    gap: 4px;
+    width: 100%;
+  }
+
+  .caps__liner img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Карусели с карточками */
+  .caps__slider {
+    width: calc(100% + 15px);
+    min-width: 0;
+    max-width: calc(100% + 15px);
+    overflow: hidden;
+  }
+
+  .caps__scrollbar {
+    width: 100%;
+  }
+
+  .caps__slider .prod-grid.swiper-wrapper {
+    display: flex;
+    gap: 0;
+  }
+
+  .caps__slider .prod-card.swiper-slide {
+    width: 145px;
+    height: auto;
+  }
+
+  .caps__slider .prod-card--wide.swiper-slide {
+    width: 290px;
+  }
+
+  .caps__slider .prod-card--print.swiper-slide {
+    width: 155px;
+  }
+
+  .caps__slider .prod-card__img,
+  .caps__slider .prod-card__media {
+    min-height: 0;
+    margin-bottom: 10px;
+    align-items: flex-end;
+  }
+
+  .caps__slider .prod-card__img img,
+  .caps__slider .prod-card__media img {
+    width: auto;
+    height: 120px;
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .caps__slider .prod-grid--lids .prod-card__media img {
+    height: 104px;
+  }
+
+  .caps__slider .prod-card--wide .prod-card__media img {
+    height: 100px;
+  }
+
+  .caps__slider .prod-grid--print .prod-card__media {
+    margin-bottom: 0;
+    min-height: 0;
+    margin-top: 0;
+  }
+
+  .caps__slider .prod-grid--print .prod-card__media img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 550 / 368;
+    max-height: none;
+    object-fit: cover;
+  }
+
+  .caps__slider .prod-card__title {
+    font-size: 13px;
+  }
+
+  .caps__slider .prod-card__text {
+    margin-top: 6px;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  .caps__slider .prod-card--print .prod-card__title {
+    box-sizing: content-box;
+    min-height: 2.6em;
+    margin-bottom: 8px;
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .caps__scrollbar {
+    display: block;
+    position: relative;
+    height: 8px;
+    margin-top: 18px;
+    border-radius: 4px;
+    background: var(--gray);
+  }
+
+  .caps__scrollbar .swiper-scrollbar-drag {
+    border-radius: 4px;
+    background: var(--standart-color-button);
   }
 
   .tech {

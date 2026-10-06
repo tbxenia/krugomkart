@@ -508,16 +508,15 @@
   }
 
   .cycle__map {
-    overflow: hidden;
+      overflow: hidden;
+      background: url('../images/stages__line-mobile.svg');
+      background-repeat: no-repeat;
+      background-position: top 15px center;
+      background-size: 420px;
   }
 
   .cycle__map::before {
-    left: 0;
-    top: 24px;
-    width: 100%;
-    height: 317px;
-    background-image: url("../images/production/cycle-line-mobile.svg");
-    background-size: 100% auto;
+    display: none;
   }
 
   .cycle__list {

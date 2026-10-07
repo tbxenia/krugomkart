@@ -515,7 +515,7 @@
 
   .cycle__item:last-child {
     grid-column: 1 / -1;
-    margin-top: 15px;
+    margin-top: 34px;
   }
 
   .cycle__item img {

@@ -721,7 +721,7 @@ body #header:has(+ .banner) {
   margin-top: 36px;
   overflow: visible;
   background: url("../images/line.svg");
-  background-position: top 25px center;
+  background-position: top 45px center;
   background-size: 1365px;
   background-repeat: no-repeat;
 }
@@ -1449,7 +1449,7 @@ body #header:has(+ .banner) {
   }
 
   .stages__list {
-    gap: 28px 12px;
+    gap: 48px 12px;
   }
 }
 
@@ -1796,7 +1796,7 @@ body #header:has(+ .banner) {
 
   .stages__list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px 12px;
+    gap: 48px 12px;
   }
 
   .stages__num {

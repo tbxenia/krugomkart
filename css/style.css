@@ -758,7 +758,7 @@ body #header:has(+ .banner) {
   width: auto;
   max-width: 155px;
   object-fit: contain;
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 
 .stages__title {

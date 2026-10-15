@@ -498,7 +498,7 @@
 
   .cycle__map {
       overflow: hidden;
-      background: url('../images/stages__line-mobile.svg');
+      background: url('../images/cycle__map-mobile.svg');
       background-repeat: no-repeat;
       background-position: top 15px center;
       background-size: 420px;
